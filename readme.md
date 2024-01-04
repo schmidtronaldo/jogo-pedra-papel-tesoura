@@ -1,5 +1,5 @@
 # Yu-Gi-Oh | Jo-ken-po Edition
-
+## site : https://schmidtronaldo.github.io/jogo-pedra-papel-tesoura/
 ## Jogo de jokenpo 
 
 Conceitos abordados:
