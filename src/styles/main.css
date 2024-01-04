@@ -1,0 +1,121 @@
+body{
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+button, a, img:hover,button:hover, a:hover{
+    cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+.bg_video{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg_video .video{
+    height: 100vh;
+}
+.bg_video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1)0%,rgba(0,0,0,.8)50%,rgba(0,0,0,1)100%);
+}
+.container{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+.container__left{
+    width: 35%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container__rigth{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.score_box{
+    background-color: #fff;
+    padding: 1rem;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame{
+    border: 3px solid #000;
+    border-radius: 5px;
+}
+.card_details{
+    background-color: #ffffff;
+    padding: 1rem;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#card_name{
+    font-size: .8rem;
+}
+#card_type{
+    font-size: 1rem;
+}
+.card__container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+.card__versus__container{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+}
+.versus_top, .versus_buttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+#next_duel{
+    display: none;
+}
+.card_box{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.card_infield{
+    height: 11.2rem;
+    width: 8rem;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+.card{
+    transition: transform 0.2s;
+}
+.card:hover{
+    transform: scale(1.2);
+}
